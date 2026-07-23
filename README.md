@@ -20,6 +20,7 @@ Heart-Disease-Prediction/
 └── .gitignore
 ```
 
+
 ## 1. Retrain the model (optional — a trained model is already included)
 ```bash
 cd ml
