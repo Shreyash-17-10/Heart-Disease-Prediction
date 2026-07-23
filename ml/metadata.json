@@ -1,0 +1,47 @@
+{
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "model": "XGBoost",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.8042,
+      "roc_auc": 0.9014
+    },
+    "Random Forest": {
+      "accuracy": 0.775,
+      "roc_auc": 0.8606
+    },
+    "XGBoost": {
+      "accuracy": 0.7625,
+      "roc_auc": 0.8524
+    }
+  },
+  "feature_notes": {
+    "age": "Age in years",
+    "sex": "1 = male, 0 = female",
+    "cp": "Chest pain type: 0=typical angina,1=atypical angina,2=non-anginal,3=asymptomatic",
+    "trestbps": "Resting blood pressure (mm Hg)",
+    "chol": "Serum cholesterol (mg/dl)",
+    "fbs": "Fasting blood sugar > 120 mg/dl (1=true, 0=false)",
+    "restecg": "Resting ECG results (0,1,2)",
+    "thalach": "Max heart rate achieved",
+    "exang": "Exercise induced angina (1=yes, 0=no)",
+    "oldpeak": "ST depression induced by exercise",
+    "slope": "Slope of peak exercise ST segment (0,1,2)",
+    "ca": "Number of major vessels colored by fluoroscopy (0-3)",
+    "thal": "Thalassemia: 1=fixed defect,2=normal,3=reversible defect"
+  }
+}
