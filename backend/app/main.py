@@ -4,12 +4,14 @@ import pickle
 from datetime import datetime
 from typing import List, Optional
 
+
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from sqlalchemy import create_engine, Column, Integer, Float, String, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -109,6 +111,7 @@ def flag_risk_factors(data: PatientInput) -> List[str]:
     if data.ca >= 1:
         flags.append("Blocked major vessel(s) detected")
     return flags
+
 
 
 @app.post("/api/predict", response_model=PredictionResponse)
