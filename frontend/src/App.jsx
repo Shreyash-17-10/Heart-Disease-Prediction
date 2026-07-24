@@ -109,8 +109,8 @@ export default function App() {
 
       <footer className="border-t rule">
         <div className="max-w-5xl mx-auto px-6 py-6 text-xs text-inkfaint">
-          Built with FastAPI, XGBoost, and React · For educational use only, not a
-          medical device, should be used by qualified healthcare professionals.
+          Built with FastAPI, XGBoost· For educational purpose only, not a
+          medical device, should be used by qualified healthcare professionals or doctors.
         </div>
       </footer>
     </div>
